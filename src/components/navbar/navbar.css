@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 0.5em;
+  z-index: 10;
+  transition: 0.6s;
+}
+
+.navbar__container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  align-items: center;
+}
+.navbar__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__link {
+  margin-right: 1em;
+}
+
+.navbar__link-active {
+  font-weight: 700;
+}
+
+.navbar__logo-title {
+  font-family: "Long Cang", cursive;
+  text-align: center;
+  font-size: 2em;
+}
+
+.navbar__social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0em 1.5em;
+}
+.navbar__toggle-menu {
+  width: 42px;
+  height: 42px;
+  margin-right: 1em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: flex-end;
+  border-radius: 10px;
+  padding: 0.3em;
+  display: none;
+  cursor: pointer;
+}
+.navbar__toggle-menu-active,
+.scrolling{
+  background-color: black;
+  transition: 0.6s;
+}
+/* Mobile navbar */
+.navbar__mobile {
+  width: 100%;
+  height: 95%;
+  position: fixed;
+  top: -120%;
+  left: 0;
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: black;
+  transition: 1s;
+  z-index: 100;
+}
+.navbar__mobile-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.navbar__mobile-social-icons {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: flex-end;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.navbar__mobile-active {
+  top: 64px;
+  transition: 0.6s;
+}
+
+.navbar__mobile span{
+  color: rgba(255, 255, 255, 0.5);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: flex-end;
+  justify-self: center;
+  padding-bottom: 3em;
+  font-size: 12px;
+}
+
+@media (max-width: 792px) {
+  .navbar__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .navbar__links,
+  .navbar__social-icons {
+    display: none;
+  }
+  .navbar__logo-title {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  .navbar__toggle-menu {
+    display: block;
+
+  }
+  .navbar__link {
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 90%;
+  }
+  .navbar__mobile {
+    display: grid;
+    transition: 0.6s;
+  }
+}

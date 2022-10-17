@@ -1,0 +1,26 @@
+.pricing{
+    padding: 3em 0 ;
+    background-color: #f2f2f2;
+}
+
+.pricing-list__container{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+
+@media(max-width:1015px) {
+    .pricing-list__container{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:680px) {
+    .pricing-list__container{
+        grid-template-columns: auto;
+    }
+}
