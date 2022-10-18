@@ -29,9 +29,10 @@
 }
 
 .navbar__logo-title {
-  font-family: "Long Cang", cursive;
+  font-family: 'Libre Barcode 39 Text', cursive;
   text-align: center;
-  font-size: 2em;
+  font-weight: 400;
+  font-size: 3em;
 }
 
 .navbar__social-icons {

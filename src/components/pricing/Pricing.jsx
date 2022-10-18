@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './pricing.css'
 import PricingModal from './PricingModal'
 
-const Pricing = ({especial = false, handleToggleTerms,img,title, description = 'La sesion puede ser realizada en el estudio o en algun lugar de su preferencia.', price, details}) => {
+const Pricing = ({especial = false, handleToggleTerms,img,title, description = 'La sesion puede ser realizada en el estudio o en algun lugar de su preferencia (hay costos adicionales)', price, details}) => {
     const [toggleModal, setToggleModal] = useState(false);
     const handleToggleModal = () => {
         setToggleModal(!toggleModal)

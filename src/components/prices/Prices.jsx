@@ -37,6 +37,7 @@ const PricingList = ({handleToggleTerms}) => {
               handleToggleTerms={handleToggleTerms}
               img={navidad}
               title='Paquete Navideño A' 
+              description='Las sesion se realiza en el estudio con tematica navideña. '
               price='2100'
               details={['10 fotografias digitales', '10 fotografias impresas (mismas entregadas)', ' 1 hora de sesion','Set navideño']}/>
              
@@ -45,6 +46,7 @@ const PricingList = ({handleToggleTerms}) => {
               handleToggleTerms={handleToggleTerms}
               img={navidad}
               title='Paquete Navideño B' 
+              description='Las sesion se realiza en el estudio con tematica navideña. '
               price='2700'
               details={['15 fotografias digitales', '15 fotografias impresas (mismas entregadas)', ' 1 hora de sesion','Set navideño']}/>
         </div>
