@@ -1,6 +1,6 @@
 import React from 'react'
 import {v4 as uuid} from 'uuid'
-const PricingModal = ({title, description, price, details = ['hola', 'mundo', 'equisde'], handleToggleModal}) => {
+const PricingModal = ({handleToggleTerms,title, description, price, details = ['hola', 'mundo', 'equisde'], handleToggleModal}) => {
   return (
     <div className="pricing__modal">
         <div className="pricing__modal-container">
@@ -19,7 +19,8 @@ const PricingModal = ({title, description, price, details = ['hola', 'mundo', 'e
             </ul>
             <h4 className='pricing__modal-price'>{'L.' + price}</h4>
             
-            <button>Agendar</button>
+            <a href={`https://api.whatsapp.com/send?phone=50498164469&text=Hola%2C%20me%20gustar%C3%ADa%20contratar%20el%20${title}`}>Agendar</a>
+            <p onClick={handleToggleTerms}>Terminos y condiciones</p>
         </div>
     </div>
   )

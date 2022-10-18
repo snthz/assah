@@ -1,28 +1,33 @@
 import React from 'react'
 import Pricing from '../pricing/Pricing'
+import basic from '../../assets/basic.jpg'
+import standard from '../../assets/standard2.jpg'
+import premium from '../../assets/premium.jpg'
 import './prices.css'
-const PricingList = () => {
+const PricingList = ({handleToggleTerms}) => {
   return (
     <section id='prices' className="pricing">
       <h1 className="section__title">Precios</h1>
         <div className="pricing-list__container">
             
             <Pricing 
-              title='Sesio Normal' 
-              description='La sesion se hace en estudio o  ustede decide el lugar'
-              price='5000'
-              details={['Album', '10 fotos', '1 hora','Album', '10 fotos', '1 hora']}/>
+             handleToggleTerms={handleToggleTerms}
+              img={basic}
+              title='Paquete Basico' 
+              price='1790'
+              details={['5 fotografias digitales', '5 fotografias impresas (mismas entregadas)', ' 30 minutos de sesion','Una galeria digital con 5 fotografias editadas y listas para compartir en redes sociales.']}/>
               <Pricing 
-              title='Sesio Normal' 
-              description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, natus.'
-              price='5000'/>
+              handleToggleTerms={handleToggleTerms}
+              img={standard}
+              title='Paquete Standard' 
+              price='2190'
+              details={['10 fotografias digitales', '10 fotografias impresas (mismas entregadas)', ' 1 hora de sesion','Una galeria digital con 10 fotografias editadas y listas para compartir en redes sociales.']}/>
               <Pricing 
-              title='Sesio Normal' 
-              description='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, natus.'
-              price='5000'/>
-            
-            
-
+              handleToggleTerms={handleToggleTerms}
+              img={premium}
+              title='Paquete Premium' 
+              price='2990'
+              details={['15 fotografias digitales', '15 fotografias impresas (mismas entregadas)', ' 1 hora de sesion','Una galeria digital con 15 fotografias editadas y listas para compartir en redes sociales.', 'canva']}/>
         </div>
     </section>
   )

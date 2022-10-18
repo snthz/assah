@@ -6,6 +6,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
+    padding: 1em;
     overflow: hidden;
 }
 .header__background{
@@ -29,19 +30,53 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
+.header__intro{
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 700;
+    z-index: 2;
+}
 .header h2{
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     z-index: 2;
     text-align: center;
-    padding: 1em;
+    margin-bottom: 2em;
 }
-.header a{
-    font-size: 20px;
-    /* color: black; */
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    padding: .2em 1em;
-    border: none;
+.header__button-container{
+    display: flex;
+    border-radius: 1;
+    background-position: center;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     z-index: 2;
+}
+.header__button-container i{
+    margin-left: .5em;
+}
+.header__button-container:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+.header__profile-photo{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+}
+.header__profile-photo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+.header__profile-photo img{
+    width: 200px;
 }

@@ -1,12 +1,19 @@
 import React from 'react'
 import background from '../../assets/fondo.jpg'
+import assah from '../../assets/assah.jpg'
 import './header.css'
 const Header = () => {
   return (
     <header id='home' className="header">
         <img className='header__background' src={background} alt="fondo" />
-        <h2>Quieres guardar tus mejores momentos?</h2>
-        <a aria-current="page" href="#prices" rel="noreferrer" >Agenda ahora!</a>
+       <div className="header__profile-photo">
+        <img src={assah} alt="assah" />
+       </div>
+       <h1 className='header__intro'>Hola, soy Astrid Santos</h1>
+       <h2>Fotografa profesional en Honduras</h2>
+       <div className="header__button-container">
+        <a aria-current="page" href="#prices" rel="noreferrer" >Agendar sesion <i class="fa-solid fa-arrow-right"></i></a>
+       </div>
     </header>
   )
 }

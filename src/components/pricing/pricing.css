@@ -2,9 +2,9 @@
     position: relative;
     margin-bottom: 1em;
     max-width: 300px;
-    height: 450px;
     border-radius: 5px;
     box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
     overflow: hidden;
 }
 
@@ -20,13 +20,15 @@
 .pricing__card-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 250px auto;
 }
-.pricing__card img{
+.pricing__card-img{
     position: relative;
-    width: 300px;
+    padding: 1em;
+    height: auto;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     grid-column: 1/2;
     grid-row: 1/ 2;
 }
@@ -52,9 +54,11 @@
     color: rgba(0, 0, 0, 0.7) ;
 }
 
-.pricing__card-info span {
+.pricing__price{
+    font-weight: bold;
     margin-top: .5em;
 }
+
 
 .pricing__card-info button{
     width: 30%;
@@ -119,7 +123,6 @@
 }
 
 .pricing__modal-title{
-    font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
     grid-column: 1/2;
     grid-row: 1/2;
@@ -141,8 +144,10 @@
     list-style: none;
 }
 
-.pricing__modal-container button {
+.pricing__modal-container a {
     border: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.03);
     color: rgba(0, 0, 0, 0.7);
     padding:  5px;
     border-radius: 5px;
@@ -151,10 +156,20 @@
     margin-top: 2em;
     font-weight: 700;
 }
-.pricing__modal-container button:hover {
+.pricing__modal-container a:hover {
 
     background-color: rgba(0, 0, 0, 0.1);
     
+}
+.pricing__modal-container p{
+    margin-top: 1em;
+    width: 50%;
+    font-weight: 500;
+    text-decoration:underline rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    align-self: center;
+    cursor: pointer;
 }
 .pricing__modal-price{
     margin-top: 1em;
