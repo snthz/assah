@@ -29,10 +29,9 @@
 }
 
 .navbar__logo-title {
-  font-family: 'Libre Barcode 39 Text', cursive;
   text-align: center;
-  font-weight: 400;
-  font-size: 3em;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .navbar__social-icons {
