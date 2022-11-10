@@ -1,6 +1,6 @@
 import React from 'react'
-import background from '../../assets/fondo.jpg'
-import assah from '../../assets/assah.jpg'
+import background from '../../assets/fondo.webp'
+import assah from '../../assets/assah.webp'
 import './header.css'
 const Header = () => {
   return (

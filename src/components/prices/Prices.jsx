@@ -1,9 +1,10 @@
 import React from 'react'
 import Pricing from '../pricing/Pricing'
-import basic from '../../assets/basic.jpg'
-import standard from '../../assets/standard2.jpg'
-import premium from '../../assets/premium.jpg'
-import navidad from '../../assets/arbol.jpg'
+import basic from '../../assets/basic.webp'
+import standard from '../../assets/standard2.webp'
+import premium from '../../assets/premium.webp'
+import navidada from '../../assets/astrid1.webp'
+import navidadb from '../../assets/astrid2.webp'
 import './prices.css'
 const PricingList = ({handleToggleTerms}) => {
   return (
@@ -35,7 +36,7 @@ const PricingList = ({handleToggleTerms}) => {
               <Pricing 
               especial={true}
               handleToggleTerms={handleToggleTerms}
-              img={navidad}
+              img={navidada}
               title='Paquete Navideño A' 
               description='Las sesion se realiza en el estudio con tematica navideña. '
               price='2100'
@@ -44,7 +45,7 @@ const PricingList = ({handleToggleTerms}) => {
               <Pricing 
               especial={true}
               handleToggleTerms={handleToggleTerms}
-              img={navidad}
+              img={navidadb}
               title='Paquete Navideño B' 
               description='Las sesion se realiza en el estudio con tematica navideña. '
               price='2700'
